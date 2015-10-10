@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		039A91FC1BC8B75A0020B640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A91FB1BC8B75A0020B640 /* main.m */; };
+		039A91FF1BC8B75A0020B640 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A91FE1BC8B75A0020B640 /* AppDelegate.m */; };
+		039A92021BC8B75A0020B640 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92011BC8B75A0020B640 /* ViewController.m */; };
+		039A92051BC8B75A0020B640 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039A92031BC8B75A0020B640 /* Main.storyboard */; };
+		039A92071BC8B75A0020B640 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 039A92061BC8B75A0020B640 /* Assets.xcassets */; };
+		039A920A1BC8B75A0020B640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039A92081BC8B75A0020B640 /* LaunchScreen.storyboard */; };
+		039A92151BC8B75A0020B640 /* CKAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92141BC8B75A0020B640 /* CKAlertControllerTests.m */; };
+		039A92201BC8B75A0020B640 /* CKAlertControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A921F1BC8B75A0020B640 /* CKAlertControllerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		039A92111BC8B75A0020B640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039A91EF1BC8B75A0020B640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 039A91F61BC8B75A0020B640;
+			remoteInfo = CKAlertController;
+		};
+		039A921C1BC8B75A0020B640 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 039A91EF1BC8B75A0020B640 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 039A91F61BC8B75A0020B640;
+			remoteInfo = CKAlertController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		039A91F71BC8B75A0020B640 /* CKAlertController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CKAlertController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		039A91FB1BC8B75A0020B640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		039A91FD1BC8B75A0020B640 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		039A91FE1BC8B75A0020B640 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		039A92001BC8B75A0020B640 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		039A92011BC8B75A0020B640 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		039A92041BC8B75A0020B640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		039A92061BC8B75A0020B640 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		039A92091BC8B75A0020B640 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		039A920B1BC8B75A0020B640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039A92101BC8B75A0020B640 /* CKAlertControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKAlertControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		039A92141BC8B75A0020B640 /* CKAlertControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKAlertControllerTests.m; sourceTree = "<group>"; };
+		039A92161BC8B75A0020B640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039A921B1BC8B75A0020B640 /* CKAlertControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKAlertControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		039A921F1BC8B75A0020B640 /* CKAlertControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKAlertControllerUITests.m; sourceTree = "<group>"; };
+		039A92211BC8B75A0020B640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		039A91F41BC8B75A0020B640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039A920D1BC8B75A0020B640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039A92181BC8B75A0020B640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		039A91EE1BC8B75A0020B640 = {
+			isa = PBXGroup;
+			children = (
+				039A91F91BC8B75A0020B640 /* CKAlertController */,
+				039A92131BC8B75A0020B640 /* CKAlertControllerTests */,
+				039A921E1BC8B75A0020B640 /* CKAlertControllerUITests */,
+				039A91F81BC8B75A0020B640 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		039A91F81BC8B75A0020B640 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				039A91F71BC8B75A0020B640 /* CKAlertController.app */,
+				039A92101BC8B75A0020B640 /* CKAlertControllerTests.xctest */,
+				039A921B1BC8B75A0020B640 /* CKAlertControllerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		039A91F91BC8B75A0020B640 /* CKAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				039A91FD1BC8B75A0020B640 /* AppDelegate.h */,
+				039A91FE1BC8B75A0020B640 /* AppDelegate.m */,
+				039A92001BC8B75A0020B640 /* ViewController.h */,
+				039A92011BC8B75A0020B640 /* ViewController.m */,
+				039A92031BC8B75A0020B640 /* Main.storyboard */,
+				039A92061BC8B75A0020B640 /* Assets.xcassets */,
+				039A92081BC8B75A0020B640 /* LaunchScreen.storyboard */,
+				039A920B1BC8B75A0020B640 /* Info.plist */,
+				039A91FA1BC8B75A0020B640 /* Supporting Files */,
+			);
+			path = CKAlertController;
+			sourceTree = "<group>";
+		};
+		039A91FA1BC8B75A0020B640 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				039A91FB1BC8B75A0020B640 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		039A92131BC8B75A0020B640 /* CKAlertControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				039A92141BC8B75A0020B640 /* CKAlertControllerTests.m */,
+				039A92161BC8B75A0020B640 /* Info.plist */,
+			);
+			path = CKAlertControllerTests;
+			sourceTree = "<group>";
+		};
+		039A921E1BC8B75A0020B640 /* CKAlertControllerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				039A921F1BC8B75A0020B640 /* CKAlertControllerUITests.m */,
+				039A92211BC8B75A0020B640 /* Info.plist */,
+			);
+			path = CKAlertControllerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		039A91F61BC8B75A0020B640 /* CKAlertController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039A92241BC8B75A0020B640 /* Build configuration list for PBXNativeTarget "CKAlertController" */;
+			buildPhases = (
+				039A91F31BC8B75A0020B640 /* Sources */,
+				039A91F41BC8B75A0020B640 /* Frameworks */,
+				039A91F51BC8B75A0020B640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CKAlertController;
+			productName = CKAlertController;
+			productReference = 039A91F71BC8B75A0020B640 /* CKAlertController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		039A920F1BC8B75A0020B640 /* CKAlertControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039A92271BC8B75A0020B640 /* Build configuration list for PBXNativeTarget "CKAlertControllerTests" */;
+			buildPhases = (
+				039A920C1BC8B75A0020B640 /* Sources */,
+				039A920D1BC8B75A0020B640 /* Frameworks */,
+				039A920E1BC8B75A0020B640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				039A92121BC8B75A0020B640 /* PBXTargetDependency */,
+			);
+			name = CKAlertControllerTests;
+			productName = CKAlertControllerTests;
+			productReference = 039A92101BC8B75A0020B640 /* CKAlertControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		039A921A1BC8B75A0020B640 /* CKAlertControllerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039A922A1BC8B75A0020B640 /* Build configuration list for PBXNativeTarget "CKAlertControllerUITests" */;
+			buildPhases = (
+				039A92171BC8B75A0020B640 /* Sources */,
+				039A92181BC8B75A0020B640 /* Frameworks */,
+				039A92191BC8B75A0020B640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				039A921D1BC8B75A0020B640 /* PBXTargetDependency */,
+			);
+			name = CKAlertControllerUITests;
+			productName = CKAlertControllerUITests;
+			productReference = 039A921B1BC8B75A0020B640 /* CKAlertControllerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		039A91EF1BC8B75A0020B640 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = Cocody;
+				TargetAttributes = {
+					039A91F61BC8B75A0020B640 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+					039A920F1BC8B75A0020B640 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 039A91F61BC8B75A0020B640;
+					};
+					039A921A1BC8B75A0020B640 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 039A91F61BC8B75A0020B640;
+					};
+				};
+			};
+			buildConfigurationList = 039A91F21BC8B75A0020B640 /* Build configuration list for PBXProject "CKAlertController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 039A91EE1BC8B75A0020B640;
+			productRefGroup = 039A91F81BC8B75A0020B640 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				039A91F61BC8B75A0020B640 /* CKAlertController */,
+				039A920F1BC8B75A0020B640 /* CKAlertControllerTests */,
+				039A921A1BC8B75A0020B640 /* CKAlertControllerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		039A91F51BC8B75A0020B640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039A920A1BC8B75A0020B640 /* LaunchScreen.storyboard in Resources */,
+				039A92071BC8B75A0020B640 /* Assets.xcassets in Resources */,
+				039A92051BC8B75A0020B640 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039A920E1BC8B75A0020B640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039A92191BC8B75A0020B640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		039A91F31BC8B75A0020B640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039A92021BC8B75A0020B640 /* ViewController.m in Sources */,
+				039A91FF1BC8B75A0020B640 /* AppDelegate.m in Sources */,
+				039A91FC1BC8B75A0020B640 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039A920C1BC8B75A0020B640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039A92151BC8B75A0020B640 /* CKAlertControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		039A92171BC8B75A0020B640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039A92201BC8B75A0020B640 /* CKAlertControllerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		039A92121BC8B75A0020B640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 039A91F61BC8B75A0020B640 /* CKAlertController */;
+			targetProxy = 039A92111BC8B75A0020B640 /* PBXContainerItemProxy */;
+		};
+		039A921D1BC8B75A0020B640 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 039A91F61BC8B75A0020B640 /* CKAlertController */;
+			targetProxy = 039A921C1BC8B75A0020B640 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		039A92031BC8B75A0020B640 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				039A92041BC8B75A0020B640 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		039A92081BC8B75A0020B640 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				039A92091BC8B75A0020B640 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		039A92221BC8B75A0020B640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		039A92231BC8B75A0020B640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		039A92251BC8B75A0020B640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CKAlertController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cocody.CKAlertController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		039A92261BC8B75A0020B640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = CKAlertController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cocody.CKAlertController;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		039A92281BC8B75A0020B640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CKAlertControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cocody.CKAlertControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CKAlertController.app/CKAlertController";
+			};
+			name = Debug;
+		};
+		039A92291BC8B75A0020B640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = CKAlertControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cocody.CKAlertControllerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CKAlertController.app/CKAlertController";
+			};
+			name = Release;
+		};
+		039A922B1BC8B75A0020B640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CKAlertControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cocody.CKAlertControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CKAlertController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		039A922C1BC8B75A0020B640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = CKAlertControllerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Cocody.CKAlertControllerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CKAlertController;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		039A91F21BC8B75A0020B640 /* Build configuration list for PBXProject "CKAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039A92221BC8B75A0020B640 /* Debug */,
+				039A92231BC8B75A0020B640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		039A92241BC8B75A0020B640 /* Build configuration list for PBXNativeTarget "CKAlertController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039A92251BC8B75A0020B640 /* Debug */,
+				039A92261BC8B75A0020B640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		039A92271BC8B75A0020B640 /* Build configuration list for PBXNativeTarget "CKAlertControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039A92281BC8B75A0020B640 /* Debug */,
+				039A92291BC8B75A0020B640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		039A922A1BC8B75A0020B640 /* Build configuration list for PBXNativeTarget "CKAlertControllerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039A922B1BC8B75A0020B640 /* Debug */,
+				039A922C1BC8B75A0020B640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 039A91EF1BC8B75A0020B640 /* Project object */;
+}
