@@ -15,6 +15,26 @@
 		039A920A1BC8B75A0020B640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039A92081BC8B75A0020B640 /* LaunchScreen.storyboard */; };
 		039A92151BC8B75A0020B640 /* CKAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92141BC8B75A0020B640 /* CKAlertControllerTests.m */; };
 		039A92201BC8B75A0020B640 /* CKAlertControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A921F1BC8B75A0020B640 /* CKAlertControllerUITests.m */; };
+		039A92301BC8B8440020B640 /* CKAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A922F1BC8B8440020B640 /* CKAlertController.m */; settings = {ASSET_TAGS = (); }; };
+		039A92321BC8BE6C0020B640 /* CKAlertController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039A92311BC8BE6C0020B640 /* CKAlertController.storyboard */; settings = {ASSET_TAGS = (); }; };
+		039A92361BC8C3120020B640 /* CKAlertControllerTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92351BC8C3120020B640 /* CKAlertControllerTransitionDelegate.m */; settings = {ASSET_TAGS = (); }; };
+		039A92391BC8C3340020B640 /* CKAlertControllerTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92381BC8C3340020B640 /* CKAlertControllerTransitionController.m */; settings = {ASSET_TAGS = (); }; };
+		039A92491BC8EABE0020B640 /* CKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92471BC8EABE0020B640 /* CKAlertView.m */; settings = {ASSET_TAGS = (); }; };
+		039A924C1BC8EADA0020B640 /* CKAlertTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A924B1BC8EADA0020B640 /* CKAlertTitleView.m */; settings = {ASSET_TAGS = (); }; };
+		039A924E1BC8EBEB0020B640 /* CKAlertTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A924D1BC8EBEB0020B640 /* CKAlertTitleView.xib */; settings = {ASSET_TAGS = (); }; };
+		039A92501BC8EF9A0020B640 /* CKAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A924F1BC8EF9A0020B640 /* CKAlertView.xib */; settings = {ASSET_TAGS = (); }; };
+		039A92531BC8FB4D0020B640 /* CKActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92521BC8FB4D0020B640 /* CKActionCell.m */; settings = {ASSET_TAGS = (); }; };
+		039A92561BC900FB0020B640 /* CKPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92551BC900FB0020B640 /* CKPopupView.m */; settings = {ASSET_TAGS = (); }; };
+		039A92581BC9042B0020B640 /* CKActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A92571BC9042B0020B640 /* CKActionCell.xib */; settings = {ASSET_TAGS = (); }; };
+		039A925C1BC90E080020B640 /* CKAlertTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A925A1BC90E080020B640 /* CKAlertTextFieldCell.m */; settings = {ASSET_TAGS = (); }; };
+		039A925D1BC90E080020B640 /* CKAlertTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A925B1BC90E080020B640 /* CKAlertTextFieldCell.xib */; settings = {ASSET_TAGS = (); }; };
+		CC77C9201BCB7B8100A90370 /* CKAlertUIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CC77C91F1BCB7B8100A90370 /* CKAlertUIConfiguration.m */; settings = {ASSET_TAGS = (); }; };
+		CC77C9271BCB8D0600A90370 /* popupbox_bottomborder__black.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9211BCB8D0600A90370 /* popupbox_bottomborder__black.png */; settings = {ASSET_TAGS = (); }; };
+		CC77C9281BCB8D0600A90370 /* popupbox_bottomborder__black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9221BCB8D0600A90370 /* popupbox_bottomborder__black@2x.png */; settings = {ASSET_TAGS = (); }; };
+		CC77C9291BCB8D0600A90370 /* popupbox_bottomborder__black@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9231BCB8D0600A90370 /* popupbox_bottomborder__black@3x.png */; settings = {ASSET_TAGS = (); }; };
+		CC77C92A1BCB8D0600A90370 /* popupbox_bottomborder.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9241BCB8D0600A90370 /* popupbox_bottomborder.png */; settings = {ASSET_TAGS = (); }; };
+		CC77C92B1BCB8D0600A90370 /* popupbox_bottomborder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9251BCB8D0600A90370 /* popupbox_bottomborder@2x.png */; settings = {ASSET_TAGS = (); }; };
+		CC77C92C1BCB8D0600A90370 /* popupbox_bottomborder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9261BCB8D0600A90370 /* popupbox_bottomborder@3x.png */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +71,35 @@
 		039A921B1BC8B75A0020B640 /* CKAlertControllerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CKAlertControllerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		039A921F1BC8B75A0020B640 /* CKAlertControllerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CKAlertControllerUITests.m; sourceTree = "<group>"; };
 		039A92211BC8B75A0020B640 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		039A922E1BC8B8440020B640 /* CKAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAlertController.h; sourceTree = "<group>"; };
+		039A922F1BC8B8440020B640 /* CKAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAlertController.m; sourceTree = "<group>"; };
+		039A92311BC8BE6C0020B640 /* CKAlertController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = CKAlertController.storyboard; sourceTree = "<group>"; };
+		039A92341BC8C3120020B640 /* CKAlertControllerTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAlertControllerTransitionDelegate.h; sourceTree = "<group>"; };
+		039A92351BC8C3120020B640 /* CKAlertControllerTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAlertControllerTransitionDelegate.m; sourceTree = "<group>"; };
+		039A92371BC8C3340020B640 /* CKAlertControllerTransitionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAlertControllerTransitionController.h; sourceTree = "<group>"; };
+		039A92381BC8C3340020B640 /* CKAlertControllerTransitionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAlertControllerTransitionController.m; sourceTree = "<group>"; };
+		039A92461BC8EABE0020B640 /* CKAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAlertView.h; sourceTree = "<group>"; };
+		039A92471BC8EABE0020B640 /* CKAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAlertView.m; sourceTree = "<group>"; };
+		039A924A1BC8EADA0020B640 /* CKAlertTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAlertTitleView.h; sourceTree = "<group>"; };
+		039A924B1BC8EADA0020B640 /* CKAlertTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAlertTitleView.m; sourceTree = "<group>"; };
+		039A924D1BC8EBEB0020B640 /* CKAlertTitleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CKAlertTitleView.xib; sourceTree = "<group>"; };
+		039A924F1BC8EF9A0020B640 /* CKAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CKAlertView.xib; sourceTree = "<group>"; };
+		039A92511BC8FB4D0020B640 /* CKActionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKActionCell.h; sourceTree = "<group>"; };
+		039A92521BC8FB4D0020B640 /* CKActionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKActionCell.m; sourceTree = "<group>"; };
+		039A92541BC900FB0020B640 /* CKPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKPopupView.h; sourceTree = "<group>"; };
+		039A92551BC900FB0020B640 /* CKPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKPopupView.m; sourceTree = "<group>"; };
+		039A92571BC9042B0020B640 /* CKActionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CKActionCell.xib; sourceTree = "<group>"; };
+		039A92591BC90E080020B640 /* CKAlertTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAlertTextFieldCell.h; sourceTree = "<group>"; };
+		039A925A1BC90E080020B640 /* CKAlertTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAlertTextFieldCell.m; sourceTree = "<group>"; };
+		039A925B1BC90E080020B640 /* CKAlertTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CKAlertTextFieldCell.xib; sourceTree = "<group>"; };
+		CC77C91E1BCB7B8100A90370 /* CKAlertUIConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAlertUIConfiguration.h; sourceTree = "<group>"; };
+		CC77C91F1BCB7B8100A90370 /* CKAlertUIConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAlertUIConfiguration.m; sourceTree = "<group>"; };
+		CC77C9211BCB8D0600A90370 /* popupbox_bottomborder__black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popupbox_bottomborder__black.png; sourceTree = "<group>"; };
+		CC77C9221BCB8D0600A90370 /* popupbox_bottomborder__black@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popupbox_bottomborder__black@2x.png"; sourceTree = "<group>"; };
+		CC77C9231BCB8D0600A90370 /* popupbox_bottomborder__black@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popupbox_bottomborder__black@3x.png"; sourceTree = "<group>"; };
+		CC77C9241BCB8D0600A90370 /* popupbox_bottomborder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popupbox_bottomborder.png; sourceTree = "<group>"; };
+		CC77C9251BCB8D0600A90370 /* popupbox_bottomborder@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popupbox_bottomborder@2x.png"; sourceTree = "<group>"; };
+		CC77C9261BCB8D0600A90370 /* popupbox_bottomborder@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "popupbox_bottomborder@3x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +150,7 @@
 		039A91F91BC8B75A0020B640 /* CKAlertController */ = {
 			isa = PBXGroup;
 			children = (
+				039A922D1BC8B7ED0020B640 /* CKAlertController */,
 				039A91FD1BC8B75A0020B640 /* AppDelegate.h */,
 				039A91FE1BC8B75A0020B640 /* AppDelegate.m */,
 				039A92001BC8B75A0020B640 /* ViewController.h */,
@@ -138,6 +188,74 @@
 				039A92211BC8B75A0020B640 /* Info.plist */,
 			);
 			path = CKAlertControllerUITests;
+			sourceTree = "<group>";
+		};
+		039A922D1BC8B7ED0020B640 /* CKAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				CC77C9211BCB8D0600A90370 /* popupbox_bottomborder__black.png */,
+				CC77C9221BCB8D0600A90370 /* popupbox_bottomborder__black@2x.png */,
+				CC77C9231BCB8D0600A90370 /* popupbox_bottomborder__black@3x.png */,
+				CC77C9241BCB8D0600A90370 /* popupbox_bottomborder.png */,
+				CC77C9251BCB8D0600A90370 /* popupbox_bottomborder@2x.png */,
+				CC77C9261BCB8D0600A90370 /* popupbox_bottomborder@3x.png */,
+				039A923A1BC8DE1E0020B640 /* View */,
+				039A92331BC8C2E50020B640 /* Transition */,
+				039A922E1BC8B8440020B640 /* CKAlertController.h */,
+				039A922F1BC8B8440020B640 /* CKAlertController.m */,
+				039A92311BC8BE6C0020B640 /* CKAlertController.storyboard */,
+				CC77C91E1BCB7B8100A90370 /* CKAlertUIConfiguration.h */,
+				CC77C91F1BCB7B8100A90370 /* CKAlertUIConfiguration.m */,
+			);
+			path = CKAlertController;
+			sourceTree = "<group>";
+		};
+		039A92331BC8C2E50020B640 /* Transition */ = {
+			isa = PBXGroup;
+			children = (
+				039A92341BC8C3120020B640 /* CKAlertControllerTransitionDelegate.h */,
+				039A92351BC8C3120020B640 /* CKAlertControllerTransitionDelegate.m */,
+				039A92371BC8C3340020B640 /* CKAlertControllerTransitionController.h */,
+				039A92381BC8C3340020B640 /* CKAlertControllerTransitionController.m */,
+			);
+			path = Transition;
+			sourceTree = "<group>";
+		};
+		039A923A1BC8DE1E0020B640 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				039A92541BC900FB0020B640 /* CKPopupView.h */,
+				039A92551BC900FB0020B640 /* CKPopupView.m */,
+				039A92451BC8EABE0020B640 /* Alert */,
+				039A92481BC8EABE0020B640 /* ActionSheet */,
+				039A92511BC8FB4D0020B640 /* CKActionCell.h */,
+				039A92521BC8FB4D0020B640 /* CKActionCell.m */,
+				039A92571BC9042B0020B640 /* CKActionCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		039A92451BC8EABE0020B640 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				039A92461BC8EABE0020B640 /* CKAlertView.h */,
+				039A92471BC8EABE0020B640 /* CKAlertView.m */,
+				039A924F1BC8EF9A0020B640 /* CKAlertView.xib */,
+				039A924A1BC8EADA0020B640 /* CKAlertTitleView.h */,
+				039A924B1BC8EADA0020B640 /* CKAlertTitleView.m */,
+				039A924D1BC8EBEB0020B640 /* CKAlertTitleView.xib */,
+				039A92591BC90E080020B640 /* CKAlertTextFieldCell.h */,
+				039A925A1BC90E080020B640 /* CKAlertTextFieldCell.m */,
+				039A925B1BC90E080020B640 /* CKAlertTextFieldCell.xib */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		039A92481BC8EABE0020B640 /* ActionSheet */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ActionSheet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +361,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC77C92B1BCB8D0600A90370 /* popupbox_bottomborder@2x.png in Resources */,
+				039A925D1BC90E080020B640 /* CKAlertTextFieldCell.xib in Resources */,
 				039A920A1BC8B75A0020B640 /* LaunchScreen.storyboard in Resources */,
+				CC77C9291BCB8D0600A90370 /* popupbox_bottomborder__black@3x.png in Resources */,
+				039A92501BC8EF9A0020B640 /* CKAlertView.xib in Resources */,
+				CC77C92C1BCB8D0600A90370 /* popupbox_bottomborder@3x.png in Resources */,
+				039A92321BC8BE6C0020B640 /* CKAlertController.storyboard in Resources */,
 				039A92071BC8B75A0020B640 /* Assets.xcassets in Resources */,
+				039A92581BC9042B0020B640 /* CKActionCell.xib in Resources */,
+				039A924E1BC8EBEB0020B640 /* CKAlertTitleView.xib in Resources */,
+				CC77C9271BCB8D0600A90370 /* popupbox_bottomborder__black.png in Resources */,
+				CC77C9281BCB8D0600A90370 /* popupbox_bottomborder__black@2x.png in Resources */,
 				039A92051BC8B75A0020B640 /* Main.storyboard in Resources */,
+				CC77C92A1BCB8D0600A90370 /* popupbox_bottomborder.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,9 +399,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				039A925C1BC90E080020B640 /* CKAlertTextFieldCell.m in Sources */,
+				039A924C1BC8EADA0020B640 /* CKAlertTitleView.m in Sources */,
+				039A92301BC8B8440020B640 /* CKAlertController.m in Sources */,
+				CC77C9201BCB7B8100A90370 /* CKAlertUIConfiguration.m in Sources */,
+				039A92391BC8C3340020B640 /* CKAlertControllerTransitionController.m in Sources */,
+				039A92561BC900FB0020B640 /* CKPopupView.m in Sources */,
+				039A92531BC8FB4D0020B640 /* CKActionCell.m in Sources */,
 				039A92021BC8B75A0020B640 /* ViewController.m in Sources */,
 				039A91FF1BC8B75A0020B640 /* AppDelegate.m in Sources */,
 				039A91FC1BC8B75A0020B640 /* main.m in Sources */,
+				039A92491BC8EABE0020B640 /* CKAlertView.m in Sources */,
+				039A92361BC8C3120020B640 /* CKAlertControllerTransitionDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +636,7 @@
 				039A92261BC8B75A0020B640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		039A92271BC8B75A0020B640 /* Build configuration list for PBXNativeTarget "CKAlertControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +645,7 @@
 				039A92291BC8B75A0020B640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		039A922A1BC8B75A0020B640 /* Build configuration list for PBXNativeTarget "CKAlertControllerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +654,7 @@
 				039A922C1BC8B75A0020B640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="9SE-RS-N67">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--Alert Controller-->
+        <scene sceneID="1p1-EX-IcW">
+            <objects>
+                <viewController id="9SE-RS-N67" customClass="CKAlertController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yo8-1H-oaM"/>
+                        <viewControllerLayoutGuide type="bottom" id="stH-Vx-hjk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="j9v-7T-Qtu">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Lb-jr-IBX" customClass="CKAlertView">
+                                <rect key="frame" x="159" y="150" width="282" height="300"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" placeholder="YES" id="4hY-VS-B2G"/>
+                                    <constraint firstAttribute="width" constant="282" id="60B-Mr-A6j"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.40000000000000002" colorSpace="calibratedRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="5Lb-jr-IBX" firstAttribute="centerY" secondItem="j9v-7T-Qtu" secondAttribute="centerY" id="TEe-qJ-G90"/>
+                            <constraint firstItem="5Lb-jr-IBX" firstAttribute="centerX" secondItem="j9v-7T-Qtu" secondAttribute="centerX" id="rff-vp-DZx"/>
+                        </constraints>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="oeI-J9-x4R" appends="YES" id="hlL-hF-Aau"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="alertView" destination="5Lb-jr-IBX" id="p6r-hQ-U5e"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o3L-Y0-efS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer enabled="NO" id="oeI-J9-x4R">
+                    <connections>
+                        <action selector="tapDismiss:" destination="9SE-RS-N67" id="cp2-br-ETy"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="290" y="414"/>
+        </scene>
+    </scenes>
+</document>

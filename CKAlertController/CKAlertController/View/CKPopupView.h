@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  CKPopupView.h
 //  CKAlertController
 //
 //  Created by 仇弘扬 on 15/10/10.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
-- (IBAction)buttonTapped:(id)sender;
+@interface CKPopupView : UIView
 
 @end
-

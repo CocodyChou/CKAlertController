@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CKActionCell" id="t6r-BU-c4c" customClass="CKActionCell">
+            <rect key="frame" x="0.0" y="0.0" width="270" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="270" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mR7-S2-jNY">
+                        <rect key="frame" x="12" y="8" width="246" height="38"/>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nhx-w4-hc8">
+                        <rect key="frame" x="0.0" y="0.0" width="270" height="1"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="bwB-ne-8Qo"/>
+                        </constraints>
+                    </view>
+                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FxY-9z-bHv">
+                        <rect key="frame" x="0.0" y="0.0" width="1" height="54"/>
+                        <animations/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="ixb-la-JtZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            </view>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="mR7-S2-jNY" firstAttribute="leading" secondItem="t6r-BU-c4c" secondAttribute="leading" constant="12" id="1oE-f6-seD"/>
+                <constraint firstItem="nhx-w4-hc8" firstAttribute="leading" secondItem="t6r-BU-c4c" secondAttribute="leading" id="Bog-Om-FjS"/>
+                <constraint firstAttribute="bottom" secondItem="mR7-S2-jNY" secondAttribute="bottom" constant="8" id="G4t-0P-Uc7"/>
+                <constraint firstAttribute="bottom" secondItem="FxY-9z-bHv" secondAttribute="bottom" id="SKz-nb-TlG"/>
+                <constraint firstAttribute="trailing" secondItem="nhx-w4-hc8" secondAttribute="trailing" id="U7U-tk-HL9"/>
+                <constraint firstItem="mR7-S2-jNY" firstAttribute="top" secondItem="t6r-BU-c4c" secondAttribute="top" constant="8" id="ZPF-D3-ien"/>
+                <constraint firstItem="nhx-w4-hc8" firstAttribute="top" secondItem="t6r-BU-c4c" secondAttribute="top" id="lmT-Xm-cyS"/>
+                <constraint firstItem="FxY-9z-bHv" firstAttribute="leading" secondItem="t6r-BU-c4c" secondAttribute="leading" id="m8Y-wn-bLN"/>
+                <constraint firstItem="FxY-9z-bHv" firstAttribute="top" secondItem="t6r-BU-c4c" secondAttribute="top" id="u2j-kS-mrb"/>
+                <constraint firstAttribute="trailing" secondItem="mR7-S2-jNY" secondAttribute="trailing" constant="12" id="z40-6a-VN0"/>
+            </constraints>
+            <connections>
+                <outlet property="labelOfActionTitle" destination="mR7-S2-jNY" id="eke-iD-XEV"/>
+                <outlet property="leftLine" destination="FxY-9z-bHv" id="gFZ-9l-Deb"/>
+                <outlet property="topLine" destination="nhx-w4-hc8" id="wGX-Zf-VOU"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
