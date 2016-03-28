@@ -42,14 +42,20 @@ typedef NS_ENUM(NSInteger, CKAlertControllerUIStyle) {
 + (instancetype)alertControllerWithTitle:(nullable NSString *)title message:(nullable NSString *)message preferredStyle:(CKAlertControllerStyle)preferredStyle;
 + (instancetype)alertControllerWithTitle:(nullable NSString *)title message:(nullable NSString *)message preferredStyle:(CKAlertControllerStyle)preferredStyle preferredUIStyle:(CKAlertControllerUIStyle)preferredUIStyle;
 
+#pragma mark - Actions
 - (void)addAction:(CKAlertAction *)action;
 @property (nonatomic, readonly) NSArray<CKAlertAction *> *actions;
-
 @property (nonatomic, strong, nullable) CKAlertAction *preferredAction;
 
+#pragma mark - Textfields
 - (void)addTextFieldWithConfigurationHandler:(void (^ __nullable)(UITextField *textField))configurationHandler;
 @property (nullable, nonatomic, readonly) NSArray<UITextField *> *textFields;
 
+#pragma mark - CheckBox
+@property (nullable, nonatomic, copy) NSString *checkBoxTitle;
+- (BOOL)isCheckBoxChecked;
+
+#pragma mark - Properties
 @property (nullable, nonatomic, copy) NSString *alertTitle;
 @property (nullable, nonatomic, copy) NSString *alertMessage;
 

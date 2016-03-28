@@ -10,10 +10,10 @@
 #import <UIKit/UIKit.h>
 
 typedef enum {
-    CKBaseTransitionAnimationTypePresent,
-    CKBaseTransitionAnimationTypeDismiss,
-    CKBaseTransitionAnimationTypePush,
-    CKBaseTransitionAnimationTypePop
+    CKAlertTransitionAnimationTypePresent,
+    CKAlertTransitionAnimationTypeDismiss,
+    CKAlertTransitionAnimationTypePush,
+    CKAlertTransitionAnimationTypePop
 } CKAnimationType;
 
 @interface CKAlertControllerTransitionController : NSObject <UIViewControllerAnimatedTransitioning>

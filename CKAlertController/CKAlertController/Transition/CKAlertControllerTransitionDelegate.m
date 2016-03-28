@@ -11,7 +11,7 @@
 
 @implementation CKAlertControllerTransitionDelegate
 
-+ (instancetype)defaultDelete
++ (instancetype)defaultDelegate
 {
     static CKAlertControllerTransitionDelegate *delegate = nil;
     
@@ -26,14 +26,14 @@
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForPresentedController:(UIViewController *)presented presentingController:(UIViewController *)presenting sourceController:(UIViewController *)source
 {
     CKAlertControllerTransitionController *controller = [CKAlertControllerTransitionController defaultTransitionController];
-    controller.type = CKBaseTransitionAnimationTypePresent;
+    controller.type = CKAlertTransitionAnimationTypePresent;
     return controller;
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed
 {
     CKAlertControllerTransitionController *controller = [CKAlertControllerTransitionController defaultTransitionController];
-    controller.type = CKBaseTransitionAnimationTypeDismiss;
+    controller.type = CKAlertTransitionAnimationTypeDismiss;
     return controller;
 }
 

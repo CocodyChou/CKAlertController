@@ -24,6 +24,7 @@
         {
             self.textField.backgroundColor = [UIColor colorWithWhite:1.0f alpha:0.1f];
             [self.textField setValue:[UIColor colorWithRed:120.f / 255 green:120.f / 255 blue:120.f / 255 alpha:1.0f] forKeyPath:@"_placeholderLabel.textColor"];
+            self.textField.textColor = [UIColor whiteColor];
             break;
         }
         case CKAlertControllerUIStyleWhite:

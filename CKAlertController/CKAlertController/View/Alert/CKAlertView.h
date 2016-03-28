@@ -30,7 +30,10 @@ IB_DESIGNABLE
 
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *message;
+@property (strong, nonatomic) NSString *checkBoxTip;
 
 @property (assign, nonatomic) CKAlertControllerUIStyle preferredUIStyle;
+
+- (BOOL)isCheckBoxChecked;
 
 @end

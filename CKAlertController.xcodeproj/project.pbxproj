@@ -15,26 +15,28 @@
 		039A920A1BC8B75A0020B640 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039A92081BC8B75A0020B640 /* LaunchScreen.storyboard */; };
 		039A92151BC8B75A0020B640 /* CKAlertControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92141BC8B75A0020B640 /* CKAlertControllerTests.m */; };
 		039A92201BC8B75A0020B640 /* CKAlertControllerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A921F1BC8B75A0020B640 /* CKAlertControllerUITests.m */; };
-		039A92301BC8B8440020B640 /* CKAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A922F1BC8B8440020B640 /* CKAlertController.m */; settings = {ASSET_TAGS = (); }; };
-		039A92321BC8BE6C0020B640 /* CKAlertController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039A92311BC8BE6C0020B640 /* CKAlertController.storyboard */; settings = {ASSET_TAGS = (); }; };
-		039A92361BC8C3120020B640 /* CKAlertControllerTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92351BC8C3120020B640 /* CKAlertControllerTransitionDelegate.m */; settings = {ASSET_TAGS = (); }; };
-		039A92391BC8C3340020B640 /* CKAlertControllerTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92381BC8C3340020B640 /* CKAlertControllerTransitionController.m */; settings = {ASSET_TAGS = (); }; };
-		039A92491BC8EABE0020B640 /* CKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92471BC8EABE0020B640 /* CKAlertView.m */; settings = {ASSET_TAGS = (); }; };
-		039A924C1BC8EADA0020B640 /* CKAlertTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A924B1BC8EADA0020B640 /* CKAlertTitleView.m */; settings = {ASSET_TAGS = (); }; };
-		039A924E1BC8EBEB0020B640 /* CKAlertTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A924D1BC8EBEB0020B640 /* CKAlertTitleView.xib */; settings = {ASSET_TAGS = (); }; };
-		039A92501BC8EF9A0020B640 /* CKAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A924F1BC8EF9A0020B640 /* CKAlertView.xib */; settings = {ASSET_TAGS = (); }; };
-		039A92531BC8FB4D0020B640 /* CKActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92521BC8FB4D0020B640 /* CKActionCell.m */; settings = {ASSET_TAGS = (); }; };
-		039A92561BC900FB0020B640 /* CKPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92551BC900FB0020B640 /* CKPopupView.m */; settings = {ASSET_TAGS = (); }; };
-		039A92581BC9042B0020B640 /* CKActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A92571BC9042B0020B640 /* CKActionCell.xib */; settings = {ASSET_TAGS = (); }; };
-		039A925C1BC90E080020B640 /* CKAlertTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A925A1BC90E080020B640 /* CKAlertTextFieldCell.m */; settings = {ASSET_TAGS = (); }; };
-		039A925D1BC90E080020B640 /* CKAlertTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A925B1BC90E080020B640 /* CKAlertTextFieldCell.xib */; settings = {ASSET_TAGS = (); }; };
-		CC77C9201BCB7B8100A90370 /* CKAlertUIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CC77C91F1BCB7B8100A90370 /* CKAlertUIConfiguration.m */; settings = {ASSET_TAGS = (); }; };
-		CC77C9271BCB8D0600A90370 /* popupbox_bottomborder__black.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9211BCB8D0600A90370 /* popupbox_bottomborder__black.png */; settings = {ASSET_TAGS = (); }; };
-		CC77C9281BCB8D0600A90370 /* popupbox_bottomborder__black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9221BCB8D0600A90370 /* popupbox_bottomborder__black@2x.png */; settings = {ASSET_TAGS = (); }; };
-		CC77C9291BCB8D0600A90370 /* popupbox_bottomborder__black@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9231BCB8D0600A90370 /* popupbox_bottomborder__black@3x.png */; settings = {ASSET_TAGS = (); }; };
-		CC77C92A1BCB8D0600A90370 /* popupbox_bottomborder.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9241BCB8D0600A90370 /* popupbox_bottomborder.png */; settings = {ASSET_TAGS = (); }; };
-		CC77C92B1BCB8D0600A90370 /* popupbox_bottomborder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9251BCB8D0600A90370 /* popupbox_bottomborder@2x.png */; settings = {ASSET_TAGS = (); }; };
-		CC77C92C1BCB8D0600A90370 /* popupbox_bottomborder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9261BCB8D0600A90370 /* popupbox_bottomborder@3x.png */; settings = {ASSET_TAGS = (); }; };
+		039A92301BC8B8440020B640 /* CKAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A922F1BC8B8440020B640 /* CKAlertController.m */; };
+		039A92321BC8BE6C0020B640 /* CKAlertController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 039A92311BC8BE6C0020B640 /* CKAlertController.storyboard */; };
+		039A92361BC8C3120020B640 /* CKAlertControllerTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92351BC8C3120020B640 /* CKAlertControllerTransitionDelegate.m */; };
+		039A92391BC8C3340020B640 /* CKAlertControllerTransitionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92381BC8C3340020B640 /* CKAlertControllerTransitionController.m */; };
+		039A92491BC8EABE0020B640 /* CKAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92471BC8EABE0020B640 /* CKAlertView.m */; };
+		039A924C1BC8EADA0020B640 /* CKAlertTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A924B1BC8EADA0020B640 /* CKAlertTitleView.m */; };
+		039A924E1BC8EBEB0020B640 /* CKAlertTitleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A924D1BC8EBEB0020B640 /* CKAlertTitleView.xib */; };
+		039A92501BC8EF9A0020B640 /* CKAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A924F1BC8EF9A0020B640 /* CKAlertView.xib */; };
+		039A92531BC8FB4D0020B640 /* CKActionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92521BC8FB4D0020B640 /* CKActionCell.m */; };
+		039A92561BC900FB0020B640 /* CKPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A92551BC900FB0020B640 /* CKPopupView.m */; };
+		039A92581BC9042B0020B640 /* CKActionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A92571BC9042B0020B640 /* CKActionCell.xib */; };
+		039A925C1BC90E080020B640 /* CKAlertTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 039A925A1BC90E080020B640 /* CKAlertTextFieldCell.m */; };
+		039A925D1BC90E080020B640 /* CKAlertTextFieldCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 039A925B1BC90E080020B640 /* CKAlertTextFieldCell.xib */; };
+		CC3FAF501CA8E1A300155C11 /* CKAlertCheckBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC3FAF4E1CA8E1A300155C11 /* CKAlertCheckBoxView.m */; };
+		CC3FAF511CA8E1A300155C11 /* CKAlertCheckBoxView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CC3FAF4F1CA8E1A300155C11 /* CKAlertCheckBoxView.xib */; };
+		CC77C9201BCB7B8100A90370 /* CKAlertUIConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = CC77C91F1BCB7B8100A90370 /* CKAlertUIConfiguration.m */; };
+		CC77C9271BCB8D0600A90370 /* popupbox_bottomborder__black.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9211BCB8D0600A90370 /* popupbox_bottomborder__black.png */; };
+		CC77C9281BCB8D0600A90370 /* popupbox_bottomborder__black@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9221BCB8D0600A90370 /* popupbox_bottomborder__black@2x.png */; };
+		CC77C9291BCB8D0600A90370 /* popupbox_bottomborder__black@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9231BCB8D0600A90370 /* popupbox_bottomborder__black@3x.png */; };
+		CC77C92A1BCB8D0600A90370 /* popupbox_bottomborder.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9241BCB8D0600A90370 /* popupbox_bottomborder.png */; };
+		CC77C92B1BCB8D0600A90370 /* popupbox_bottomborder@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9251BCB8D0600A90370 /* popupbox_bottomborder@2x.png */; };
+		CC77C92C1BCB8D0600A90370 /* popupbox_bottomborder@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CC77C9261BCB8D0600A90370 /* popupbox_bottomborder@3x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +94,9 @@
 		039A92591BC90E080020B640 /* CKAlertTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAlertTextFieldCell.h; sourceTree = "<group>"; };
 		039A925A1BC90E080020B640 /* CKAlertTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAlertTextFieldCell.m; sourceTree = "<group>"; };
 		039A925B1BC90E080020B640 /* CKAlertTextFieldCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CKAlertTextFieldCell.xib; sourceTree = "<group>"; };
+		CC3FAF4D1CA8E1A300155C11 /* CKAlertCheckBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAlertCheckBoxView.h; sourceTree = "<group>"; };
+		CC3FAF4E1CA8E1A300155C11 /* CKAlertCheckBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAlertCheckBoxView.m; sourceTree = "<group>"; };
+		CC3FAF4F1CA8E1A300155C11 /* CKAlertCheckBoxView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CKAlertCheckBoxView.xib; sourceTree = "<group>"; };
 		CC77C91E1BCB7B8100A90370 /* CKAlertUIConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CKAlertUIConfiguration.h; sourceTree = "<group>"; };
 		CC77C91F1BCB7B8100A90370 /* CKAlertUIConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CKAlertUIConfiguration.m; sourceTree = "<group>"; };
 		CC77C9211BCB8D0600A90370 /* popupbox_bottomborder__black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = popupbox_bottomborder__black.png; sourceTree = "<group>"; };
@@ -238,6 +243,9 @@
 		039A92451BC8EABE0020B640 /* Alert */ = {
 			isa = PBXGroup;
 			children = (
+				CC3FAF4D1CA8E1A300155C11 /* CKAlertCheckBoxView.h */,
+				CC3FAF4E1CA8E1A300155C11 /* CKAlertCheckBoxView.m */,
+				CC3FAF4F1CA8E1A300155C11 /* CKAlertCheckBoxView.xib */,
 				039A92461BC8EABE0020B640 /* CKAlertView.h */,
 				039A92471BC8EABE0020B640 /* CKAlertView.m */,
 				039A924F1BC8EF9A0020B640 /* CKAlertView.xib */,
@@ -364,6 +372,7 @@
 				CC77C92B1BCB8D0600A90370 /* popupbox_bottomborder@2x.png in Resources */,
 				039A925D1BC90E080020B640 /* CKAlertTextFieldCell.xib in Resources */,
 				039A920A1BC8B75A0020B640 /* LaunchScreen.storyboard in Resources */,
+				CC3FAF511CA8E1A300155C11 /* CKAlertCheckBoxView.xib in Resources */,
 				CC77C9291BCB8D0600A90370 /* popupbox_bottomborder__black@3x.png in Resources */,
 				039A92501BC8EF9A0020B640 /* CKAlertView.xib in Resources */,
 				CC77C92C1BCB8D0600A90370 /* popupbox_bottomborder@3x.png in Resources */,
@@ -404,6 +413,7 @@
 				039A92301BC8B8440020B640 /* CKAlertController.m in Sources */,
 				CC77C9201BCB7B8100A90370 /* CKAlertUIConfiguration.m in Sources */,
 				039A92391BC8C3340020B640 /* CKAlertControllerTransitionController.m in Sources */,
+				CC3FAF501CA8E1A300155C11 /* CKAlertCheckBoxView.m in Sources */,
 				039A92561BC900FB0020B640 /* CKPopupView.m in Sources */,
 				039A92531BC8FB4D0020B640 /* CKActionCell.m in Sources */,
 				039A92021BC8B75A0020B640 /* ViewController.m in Sources */,

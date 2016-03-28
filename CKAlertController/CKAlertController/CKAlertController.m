@@ -32,6 +32,11 @@
     return self;
 }
 
+- (void)dealloc
+{
+    _handler = nil;
+}
+
 @end
 
 #pragma mark - Alert Controller
@@ -42,7 +47,6 @@
 @property (weak, nonatomic) IBOutlet CKAlertView *alertView;
 
 @property (strong, nonatomic) NSMutableArray *ck_actions;
-@property (strong, nonatomic) NSMutableArray *ck_textFields;
 @property (strong, nonatomic) NSMutableArray *ck_textFieldHandles;
 
 @end
@@ -53,7 +57,15 @@
 
 + (instancetype)alertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(CKAlertControllerStyle)preferredStyle
 {
+#ifdef Sensor
+    CKAlertControllerUIStyle style = CKAlertControllerUIStyleBlack;
+    if ([CurrtentThemeName isEqualToString:@"white"]) {
+        style = CKAlertControllerUIStyleWhite;
+    }
+    return [self alertControllerWithTitle:title message:message preferredStyle:preferredStyle preferredUIStyle:style];
+#else
     return [self alertControllerWithTitle:title message:message preferredStyle:preferredStyle preferredUIStyle:CKAlertControllerUIStyleBlack];
+#endif
 }
 
 + (instancetype)alertControllerWithTitle:(nullable NSString *)title message:(nullable NSString *)message preferredStyle:(CKAlertControllerStyle)preferredStyle preferredUIStyle:(CKAlertControllerUIStyle)preferredUIStyle
@@ -71,7 +83,7 @@
     _preferredUIStyle = preferredUIStyle;
     _alertTitle = title;
     _alertMessage = message;
-    self.transitioningDelegate = [CKAlertControllerTransitionDelegate defaultDelete];
+    self.transitioningDelegate = [CKAlertControllerTransitionDelegate defaultDelegate];
     self.modalPresentationStyle = UIModalPresentationCustom;
     return self;
 }
@@ -83,6 +95,8 @@
     self.alertView.textFieldHandles = self.ck_textFieldHandles;
     self.alertView.title = _alertTitle;
     self.alertView.message = _alertMessage;
+    
+    self.alertView.checkBoxTip = _checkBoxTitle;
     
     self.alertView.delegate = self;
     self.alertView.preferredUIStyle = self.preferredUIStyle;
@@ -97,9 +111,26 @@
     
 }
 
+- (void)viewDidDisappear:(BOOL)animated
+{
+    [super viewDidDisappear:animated];
+    [self.ck_actions removeAllObjects];
+    [self.ck_textFieldHandles removeAllObjects];
+    self.ck_actions = nil;
+    self.ck_textFieldHandles = nil;
+    
+    self.alertView.actions = nil;
+    self.alertView.textFieldHandles = nil;
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)dealloc
+{
+    
 }
 
 #pragma mark - AlertView delegate
@@ -169,14 +200,6 @@
     return _ck_actions;
 }
 
-- (NSMutableArray *)ck_textFields
-{
-    if (!_ck_textFields) {
-        _ck_textFields = [NSMutableArray array];
-    }
-    return _ck_textFields;
-}
-
 - (NSMutableArray *)ck_textFieldHandles
 {
     if (!_ck_textFieldHandles) {
@@ -192,7 +215,12 @@
 
 - (NSArray<UITextField *> *)textFields
 {
-    return [self.ck_textFields copy];
+    return [self.alertView.textFields copy];
+}
+
+- (BOOL)isCheckBoxChecked
+{
+    return [self.alertView isCheckBoxChecked];
 }
 
 /*

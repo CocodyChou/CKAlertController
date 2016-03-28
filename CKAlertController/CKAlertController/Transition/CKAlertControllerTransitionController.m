@@ -32,14 +32,14 @@
 -(void)animateTransition:(id<UIViewControllerContextTransitioning>)transitionContext {
     
     switch (self.type) {
-        case CKBaseTransitionAnimationTypeDismiss:
-        case CKBaseTransitionAnimationTypePop:
+        case CKAlertTransitionAnimationTypeDismiss:
+        case CKAlertTransitionAnimationTypePop:
         {
             [self hideAnimate:transitionContext];
             break;
         }
-        case CKBaseTransitionAnimationTypePresent:
-        case CKBaseTransitionAnimationTypePush:
+        case CKAlertTransitionAnimationTypePresent:
+        case CKAlertTransitionAnimationTypePush:
         {
             [self showAnimate:transitionContext];
             break;
@@ -59,13 +59,13 @@
     [containerView addSubview:toViewController.view];
     
     CGAffineTransform scaleT = CGAffineTransformMakeScale(2.f, 2.f);
-    toViewController.view.transform = CGAffineTransformTranslate(scaleT, 1, 1);
+    toViewController.view.transform = CGAffineTransformTranslate(scaleT, 0, 0);
     
     //Animate using keyframe animations
     [UIView animateKeyframesWithDuration:[self transitionDuration:transitionContext] delay:0.0 options:UIViewKeyframeAnimationOptionCalculationModeLinear animations:^{
         toViewController.view.alpha = 1.0f;
         CGAffineTransform scaleT = CGAffineTransformMakeScale(1.0f, 1.0f);
-        toViewController.view.transform = CGAffineTransformTranslate(scaleT, 1, 1);
+        toViewController.view.transform = CGAffineTransformTranslate(scaleT, 0, 0);
     } completion:^(BOOL finished) {
         [transitionContext completeTransition:YES];
     }];

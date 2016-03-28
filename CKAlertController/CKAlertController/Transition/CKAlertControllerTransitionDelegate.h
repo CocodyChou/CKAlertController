@@ -11,6 +11,6 @@
 
 @interface CKAlertControllerTransitionDelegate : NSObject <UIViewControllerTransitioningDelegate>
 
-+ (instancetype)defaultDelete;
++ (instancetype)defaultDelegate;
 
 @end

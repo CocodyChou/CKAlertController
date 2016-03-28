@@ -11,6 +11,7 @@
 #import "CKAlertController.h"
 #import "CKActionCell.h"
 #import "CKAlertTitleView.h"
+#import "CKAlertCheckBoxView.h"
 
 CGFloat const SpaceOfTop = 20.f;
 CGFloat const SpaceOfBottom = 20.f;
@@ -24,6 +25,7 @@ CGFloat const HeightOfTextFieldCell = 35.f;
 
 @property (weak, nonatomic) IBOutlet UIScrollView *titleScrollView;
 @property (weak, nonatomic) IBOutlet CKAlertTitleView *titleView;
+@property (weak, nonatomic) IBOutlet CKAlertCheckBoxView *checkBoxView;
 @property (weak, nonatomic) IBOutlet UICollectionView *textFieldsCollectionView;
 @property (weak, nonatomic) IBOutlet UICollectionView *actionsCollectionView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightOfTitleScrollView;
@@ -31,8 +33,12 @@ CGFloat const HeightOfTextFieldCell = 35.f;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightOfTextFieldsCollectionView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightOfActionsCollectionView;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightOfAlertView;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *heightOfCheckBox;
+
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *spaceOfTitleAndTextField;
-@property (weak, nonatomic) IBOutlet NSLayoutConstraint *spaceOfTextFieldAndAction;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *spaceOfTextFieldAndCheckBox;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *spaceOfCheckBoxAndAction;
+
 @property (weak, nonatomic) IBOutlet UIView *lineBetweenTextFieldAndAction;
 
 @property (assign, nonatomic, getter=isKeyboardHidden) BOOL keyboardHidden;
@@ -113,7 +119,7 @@ CGFloat const HeightOfTextFieldCell = 35.f;
 - (void)calculateLayout
 {
     // 计算 title 和 message 高度
-    NSInteger heightOfTitleView = 20 + [self.title boundingRectWithSize:CGSizeMake(242, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleView.labelOfTitle.font} context:nil].size.height + 8 + [self.message boundingRectWithSize:CGSizeMake(242, 1000) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleView.labelOfDetail.font} context:nil].size.height + 8;
+    NSInteger heightOfTitleView = 20 + [self.title boundingRectWithSize:CGSizeMake(242, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleView.labelOfTitle.font} context:nil].size.height + 8 + [self.message boundingRectWithSize:CGSizeMake(242, 0) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName : self.titleView.labelOfDetail.font} context:nil].size.height + 8;
     self.heightOfTitleScrollView.constant = heightOfTitleView;
     self.titleScrollView.contentSize = CGSizeMake(self.titleScrollView.frame.size.width, heightOfTitleView);
     self.heightOfTitleView.constant = heightOfTitleView;
@@ -124,8 +130,16 @@ CGFloat const HeightOfTextFieldCell = 35.f;
     // 如果没有输入框，则输入框和 title 中间间距为 0
     self.spaceOfTitleAndTextField.constant = self.textFieldHandles.count == 0 ? 0 : 16;
     
-    // 如果没有按钮，则按钮与输入框的间距为0
-    self.spaceOfTextFieldAndAction.constant = self.actions.count == 0 ? 0 : 16;
+    // 如果没有勾选框提示，则勾选框高度为0
+    self.heightOfCheckBox.constant = self.checkBoxTip.length > 0 ? 36 : 0;
+    self.spaceOfTextFieldAndCheckBox.constant = self.checkBoxTip.length == 0 ? 8 : 0;
+    self.spaceOfCheckBoxAndAction.constant = self.checkBoxTip.length == 0 ? 8 : 4;
+    
+    // 如果没有按钮，并且没有勾选提示，则按钮与输入框的间距为0
+    if (self.checkBoxTip.length == 0) {
+        self.spaceOfTextFieldAndCheckBox.constant = self.actions.count == 0 ? 0 : 8;
+        self.spaceOfCheckBoxAndAction.constant = self.actions.count == 0 ? 0 : 8;
+    }
     
     // 两个按钮，同一行摆放，高度为HeightOfActionCell，其他情况则是按钮数量乘以HeightOfActionCell
     self.heightOfActionsCollectionView.constant = self.actions.count == 2 ? HeightOfActionCell : self.actions.count * HeightOfActionCell;
@@ -138,7 +152,7 @@ CGFloat const HeightOfTextFieldCell = 35.f;
 - (CGFloat)calculateTotalHeight
 {
     // alertView 的高度
-    return self.heightOfTitleScrollView.constant + self.spaceOfTitleAndTextField.constant + self.heightOfTextFieldsCollectionView.constant + self.spaceOfTextFieldAndAction.constant + self.heightOfActionsCollectionView.constant;
+    return self.heightOfTitleScrollView.constant + self.spaceOfTitleAndTextField.constant + self.heightOfTextFieldsCollectionView.constant + self.heightOfCheckBox.constant + self.spaceOfTextFieldAndCheckBox.constant + self.spaceOfCheckBoxAndAction.constant +  self.heightOfActionsCollectionView.constant;
 }
 
 - (void)adaptLayout
@@ -162,7 +176,7 @@ CGFloat const HeightOfTextFieldCell = 35.f;
             break;
         }
         // 不满足需要，两部分都缩小
-        self.heightOfTextFieldsCollectionView.constant = self.actions.count >= 1 ? HeightOfTextFieldCell * 1.5 : self.textFieldHandles.count * HeightOfTextFieldCell;
+        self.heightOfTextFieldsCollectionView.constant = self.textFieldHandles.count >= 1 ? HeightOfTextFieldCell * 1.5 : 0;
         
         self.heightOfActionsCollectionView.constant = self.actions.count >= 3 ? HeightOfActionCell * 2.2 : self.actions.count * HeightOfActionCell;
         // 如果满足需要，则break
@@ -170,7 +184,7 @@ CGFloat const HeightOfTextFieldCell = 35.f;
             break;
         }
         // 仍不满足需要，用最大高度减去各部位高度，设置给 title scrollView
-        self.heightOfTitleScrollView.constant = self.maxHeight - self.heightOfActionsCollectionView.constant - self.heightOfTextFieldsCollectionView.constant - self.spaceOfTextFieldAndAction.constant - self.spaceOfTitleAndTextField.constant;
+        self.heightOfTitleScrollView.constant = self.maxHeight - self.heightOfActionsCollectionView.constant - self.heightOfTextFieldsCollectionView.constant - self.heightOfCheckBox.constant - self.spaceOfTextFieldAndCheckBox.constant - self.spaceOfCheckBoxAndAction.constant - self.spaceOfTitleAndTextField.constant;
     }
     // 居中显示 alert view
     for (NSLayoutConstraint *constraint in self.superview.constraints) {
@@ -396,6 +410,13 @@ CGFloat const HeightOfTextFieldCell = 35.f;
     [self calculateLayout];
 }
 
+- (void)setCheckBoxTip:(NSString *)checkBoxTip
+{
+    _checkBoxTip = [checkBoxTip copy];
+    self.checkBoxView.labelOfTip.text = checkBoxTip;
+    [self calculateLayout];
+}
+
 - (void)setPreferredUIStyle:(CKAlertControllerUIStyle)preferredUIStyle
 {
     _preferredUIStyle = preferredUIStyle;
@@ -414,6 +435,16 @@ CGFloat const HeightOfTextFieldCell = 35.f;
 - (NSArray *)textFields
 {
     return [self.ck_textFields copy];
+}
+
+- (BOOL)isCheckBoxChecked
+{
+    return self.checkBoxView.buttonOfCheckBox.state == UIControlStateSelected;
+}
+
+- (void)dealloc
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 /*
